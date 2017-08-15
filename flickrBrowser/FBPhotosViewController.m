@@ -40,11 +40,15 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self requestMoreIfNeeded];
+    [self loadMorePhotosIfNeeded];
 }
 
 - (void)handleOnPhotosLoaded:(NSArray *)photos error:(NSError *)error
 {
+    if (error != nil) {
+        // present error
+        return;
+    }
     NSUInteger startIndex = _photos.count;
     NSUInteger count = photos.count;
     [_photos addObjectsFromArray:photos];
@@ -55,10 +59,10 @@
     [_collection insertItemsAtIndexPaths:indexPaths];
 }
 
-- (void)requestMoreIfNeeded
+- (void)loadMorePhotosIfNeeded
 {
     if (_collection.contentOffset.y + _collection.frame.size.height > _collection.contentSize.height - 100) {
-        PERFORM_BLOCK_IF_NOT_NIL(self.handlerOnScrolledToBottom);
+        PERFORM_BLOCK_IF_NOT_NIL(self.handlerOnScrollToBottom);
     }
 }
 
@@ -66,7 +70,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [self requestMoreIfNeeded];
+    [self loadMorePhotosIfNeeded];
 }
 
 #pragma mark - UICollectionViewDataSource

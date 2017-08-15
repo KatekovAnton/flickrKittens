@@ -14,7 +14,7 @@
     IBOutlet UICollectionView *_collection;
 }
 
-@property (nonatomic, copy) FBEmptyBlock handlerOnScrolledToBottom;
+@property (nonatomic, copy) FBEmptyBlock handlerOnScrollToBottom;
 
 - (void)handleOnPhotosLoaded:(NSArray *)photos error:(NSError *)error;
 

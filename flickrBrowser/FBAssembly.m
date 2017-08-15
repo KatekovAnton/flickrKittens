@@ -13,9 +13,7 @@
 
 
 
-@interface FBAssembly () {
-    __weak FBPhotosViewController *_photosScreen;
-}
+@interface FBAssembly ()
 
 @property (nonatomic) UIViewController *rootViewController;
 @property (nonatomic) UINavigationController *rootNavigationController;
@@ -46,19 +44,25 @@
 - (void)setupApplication
 {
     FBPhotosViewController *photosScreen = [FBPhotosViewController new];
-    _photosScreen = photosScreen;
-    
     self.rootNavigationController = [[UINavigationController alloc] initWithRootViewController:photosScreen];
     [self.rootViewController presentViewController:self.rootNavigationController animated:NO completion:nil];
     
     WEAK(photosScreen);
-    _photosScreen.handlerOnScrolledToBottom = ^
+    photosScreen.handlerOnScrollToBottom = ^
     {
         [[FBDataProvider sharedInstance].photosController loadTailWithHandler:^(NSArray<__kindof FBPhoto *> *photos, NSError *error)
          {
              [photosScreen_weak_ handleOnPhotosLoaded:photos error:error];
          }];
     };
+    
+    // say if we have tap event for photo:
+//    photosScreen.handlerOnPhotoTap = ^(FBPhoto *photo)
+//    {
+//        FBPhotoViewController *photoScreen = [FBPhotoViewController new];
+//        photoScreen.photo = photo;
+//        [photosScreen_weak_.navigationController pushViewController:photoScreen animated:YES];
+//    };
 }
 
 @end
