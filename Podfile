@@ -12,6 +12,6 @@ end
 
 
 
-target 'flickBrowser' do
+target 'flickrBrowser' do
     import_pods
 end

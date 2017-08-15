@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BDE66CF831E96DD7A7B0ED3 /* libPods-flickBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D38CE3967D35C8103688F507 /* libPods-flickBrowser.a */; };
+		53D6E2A11E3349DA5F0EBE40 /* libPods-flickrBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5512FE31D75373535DE569C6 /* libPods-flickrBrowser.a */; };
 		6C05A2DF1F41AB12008D1DB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C05A2DE1F41AB12008D1DB3 /* main.m */; };
 		6C05A2E21F41AB12008D1DB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C05A2E11F41AB12008D1DB3 /* AppDelegate.m */; };
 		6C05A2E51F41AB12008D1DB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C05A2E41F41AB12008D1DB3 /* ViewController.m */; };
@@ -30,7 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10487CA6C956C3ACF5193C66 /* Pods-flickrBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flickrBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flickrBrowser/Pods-flickrBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		3E70F7FD82A771A63B7D88FA /* Pods-flickBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flickBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flickBrowser/Pods-flickBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		5512FE31D75373535DE569C6 /* libPods-flickrBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-flickrBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C05A2DA1F41AB12008D1DB3 /* flickrBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flickrBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C05A2DE1F41AB12008D1DB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6C05A2E01F41AB12008D1DB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		6C705CCD1F421E6200395F3B /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
 		6C705CCE1F421E6200395F3B /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
 		905176BA5ED3E6AACA99C7B1 /* Pods-flickBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flickBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-flickBrowser/Pods-flickBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		A167B48AEACC8F6C3FCA8B3C /* Pods-flickrBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flickrBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-flickrBrowser/Pods-flickrBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		D38CE3967D35C8103688F507 /* libPods-flickBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-flickBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BDE66CF831E96DD7A7B0ED3 /* libPods-flickBrowser.a in Frameworks */,
+				53D6E2A11E3349DA5F0EBE40 /* libPods-flickrBrowser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				D38CE3967D35C8103688F507 /* libPods-flickBrowser.a */,
+				5512FE31D75373535DE569C6 /* libPods-flickrBrowser.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,7 +98,7 @@
 		6C05A2D11F41AB12008D1DB3 = {
 			isa = PBXGroup;
 			children = (
-				6C05A2DC1F41AB12008D1DB3 /* flickBrowser */,
+				6C05A2DC1F41AB12008D1DB3 /* flickrBrowser */,
 				6C05A2DB1F41AB12008D1DB3 /* Products */,
 				97501DE2AA3795C694AC4739 /* Pods */,
 				3BE6741DFB15F8FB1B302F98 /* Frameworks */,
@@ -107,7 +113,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6C05A2DC1F41AB12008D1DB3 /* flickBrowser */ = {
+		6C05A2DC1F41AB12008D1DB3 /* flickrBrowser */ = {
 			isa = PBXGroup;
 			children = (
 				6C05A2FD1F41F1D7008D1DB3 /* Resources */,
@@ -115,7 +121,7 @@
 				6C05A2E61F41AB12008D1DB3 /* Main.storyboard */,
 				6C05A2DD1F41AB12008D1DB3 /* Supporting Files */,
 			);
-			path = flickBrowser;
+			path = flickrBrowser;
 			sourceTree = "<group>";
 		};
 		6C05A2DD1F41AB12008D1DB3 /* Supporting Files */ = {
@@ -232,6 +238,8 @@
 			children = (
 				3E70F7FD82A771A63B7D88FA /* Pods-flickBrowser.debug.xcconfig */,
 				905176BA5ED3E6AACA99C7B1 /* Pods-flickBrowser.release.xcconfig */,
+				10487CA6C956C3ACF5193C66 /* Pods-flickrBrowser.debug.xcconfig */,
+				A167B48AEACC8F6C3FCA8B3C /* Pods-flickrBrowser.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -239,9 +247,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C05A2D91F41AB12008D1DB3 /* flickBrowser */ = {
+		6C05A2D91F41AB12008D1DB3 /* flickrBrowser */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C05A2F11F41AB12008D1DB3 /* Build configuration list for PBXNativeTarget "flickBrowser" */;
+			buildConfigurationList = 6C05A2F11F41AB12008D1DB3 /* Build configuration list for PBXNativeTarget "flickrBrowser" */;
 			buildPhases = (
 				F23FF6C1C2FE9A6327F11EB4 /* [CP] Check Pods Manifest.lock */,
 				6C05A2D61F41AB12008D1DB3 /* Sources */,
@@ -254,7 +262,7 @@
 			);
 			dependencies = (
 			);
-			name = flickBrowser;
+			name = flickrBrowser;
 			productName = flickBrowser;
 			productReference = 6C05A2DA1F41AB12008D1DB3 /* flickrBrowser.app */;
 			productType = "com.apple.product-type.application";
@@ -275,7 +283,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6C05A2D51F41AB12008D1DB3 /* Build configuration list for PBXProject "flickBrowser" */;
+			buildConfigurationList = 6C05A2D51F41AB12008D1DB3 /* Build configuration list for PBXProject "flickrBrowser" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -288,7 +296,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C05A2D91F41AB12008D1DB3 /* flickBrowser */,
+				6C05A2D91F41AB12008D1DB3 /* flickrBrowser */,
 			);
 		};
 /* End PBXProject section */
@@ -321,7 +329,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flickBrowser/Pods-flickBrowser-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flickrBrowser/Pods-flickrBrowser-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87B6D3C3EFC9E2994E7F2E0D /* [CP] Embed Pods Frameworks */ = {
@@ -336,7 +344,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flickBrowser/Pods-flickBrowser-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flickrBrowser/Pods-flickrBrowser-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F23FF6C1C2FE9A6327F11EB4 /* [CP] Check Pods Manifest.lock */ = {
@@ -492,28 +500,28 @@
 		};
 		6C05A2F21F41AB12008D1DB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E70F7FD82A771A63B7D88FA /* Pods-flickBrowser.debug.xcconfig */;
+			baseConfigurationReference = 10487CA6C956C3ACF5193C66 /* Pods-flickrBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y9B8ZLHEX6;
-				GCC_PREFIX_HEADER = flickBrowser/FBUtil.h;
-				INFOPLIST_FILE = flickBrowser/Info.plist;
+				GCC_PREFIX_HEADER = flickrBrowser/FBUtil.h;
+				INFOPLIST_FILE = "$(SRCROOT)/flickrBrowser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.katekovanton.flickBrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.katekovanton.flickrBrowser;
 				PRODUCT_NAME = flickrBrowser;
 			};
 			name = Debug;
 		};
 		6C05A2F31F41AB12008D1DB3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 905176BA5ED3E6AACA99C7B1 /* Pods-flickBrowser.release.xcconfig */;
+			baseConfigurationReference = A167B48AEACC8F6C3FCA8B3C /* Pods-flickrBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y9B8ZLHEX6;
-				GCC_PREFIX_HEADER = flickBrowser/FBUtil.h;
-				INFOPLIST_FILE = flickBrowser/Info.plist;
+				GCC_PREFIX_HEADER = flickrBrowser/FBUtil.h;
+				INFOPLIST_FILE = "$(SRCROOT)/flickrBrowser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.katekovanton.flickBrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.katekovanton.flickrBrowser;
 				PRODUCT_NAME = flickrBrowser;
 			};
 			name = Release;
@@ -521,7 +529,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6C05A2D51F41AB12008D1DB3 /* Build configuration list for PBXProject "flickBrowser" */ = {
+		6C05A2D51F41AB12008D1DB3 /* Build configuration list for PBXProject "flickrBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C05A2EF1F41AB12008D1DB3 /* Debug */,
@@ -530,7 +538,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C05A2F11F41AB12008D1DB3 /* Build configuration list for PBXNativeTarget "flickBrowser" */ = {
+		6C05A2F11F41AB12008D1DB3 /* Build configuration list for PBXNativeTarget "flickrBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C05A2F21F41AB12008D1DB3 /* Debug */,
