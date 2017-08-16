@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BDE66CF831E96DD7A7B0ED3 /* libPods-flickBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D38CE3967D35C8103688F507 /* libPods-flickBrowser.a */; };
 		53D6E2A11E3349DA5F0EBE40 /* libPods-flickrBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5512FE31D75373535DE569C6 /* libPods-flickrBrowser.a */; };
 		6C05A2DF1F41AB12008D1DB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C05A2DE1F41AB12008D1DB3 /* main.m */; };
 		6C05A2E21F41AB12008D1DB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C05A2E11F41AB12008D1DB3 /* AppDelegate.m */; };
@@ -78,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BDE66CF831E96DD7A7B0ED3 /* libPods-flickBrowser.a in Frameworks */,
 				53D6E2A11E3349DA5F0EBE40 /* libPods-flickrBrowser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
